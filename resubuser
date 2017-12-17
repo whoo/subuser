@@ -1,0 +1,34 @@
+#!/bin/bash
+
+
+
+[ "x$2" == "x" ] && exit
+
+SUBUSER=$2
+BASE=/home/$USER/.subuser
+CMD=`cat $BASE/$SUBUSER/cmd`
+
+
+function run()
+{
+mkdir -p $BASE/homes/$SUBUSER 
+docker run -it --rm -u $UID:$UID \
+-e DISPLAY=$DISPLAY \
+-e USER=$USER \
+-e LOGNAME=$USER \
+-e HOME=/home/$USER \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+-v $BASE/homes/$SUBUSER:/home/$USER/ -v $PWD:/tmp/pwd -w /tmp/pwd sub_$SUBUSER $CMD
+}
+
+
+function build()
+{
+cd $SUBUSER
+docker build -t sub_$SUBUSER .
+}
+
+[ "x$1" == "x-r" ] && run
+[ "x$1" == "x-b" ] && build
+
+
