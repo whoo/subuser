@@ -1,0 +1,13 @@
+{
+    "rights": {
+        "daemon": false,
+        "display": false,
+        "docker": false,
+        "home": false,
+        "pwd": false,
+        "root": false,
+        "sound": false,
+        "ssh": false
+    },
+    "cmd": "/bin/sh"
+}

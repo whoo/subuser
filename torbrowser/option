@@ -1,0 +1,11 @@
+{
+    "rights": {
+        "display": true,
+        "home": true,
+        "ssh": false,
+        "pwd": false,
+        "sound": false,
+        "daemon": true
+    },
+    "cmd": "/first.sh"
+}
