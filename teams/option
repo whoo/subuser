@@ -7,5 +7,6 @@
 		"daemon": true,
 		"sound": true
 	},
-	"cmd": "/Start.sh"
+	"cmd": "/usr/share/teams/teams",
+	"name": "teams"
 }
