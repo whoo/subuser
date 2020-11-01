@@ -7,5 +7,6 @@
         "sound": false,
         "daemon": true
     },
-    "cmd": "/first.sh"
+    "cmd": "/first.sh",
+    "name": "torbrowser"
 }

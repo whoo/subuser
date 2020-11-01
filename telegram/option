@@ -1,0 +1,12 @@
+{
+	"rights": {
+		"display": true,
+		"ssh": false,
+		"home": true,
+		"pwd": false,
+		"daemon": true,
+		"sound": true
+	},
+	"cmd": "telegram-desktop",
+	"name": "telegram"
+}

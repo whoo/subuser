@@ -1,0 +1,12 @@
+{
+	"rights": {
+		"display": true,
+		"ssh": false,
+		"home": true,
+		"pwd": false,
+		"daemon": false,
+		"sound": true
+	},
+	"cmd": "discord  --no-sandbox",
+	"name": "discord"
+}

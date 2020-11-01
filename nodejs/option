@@ -1,11 +1,11 @@
 {
     "rights": {
         "daemon": false,
-        "display": true,
+        "display": false,
         "docker": false,
-        "home": true,
-        "pwd": true,
-        "root": true,
+        "home": false,
+        "pwd": false,
+        "root": false,
         "sound": false,
         "ssh": false
     },

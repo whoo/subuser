@@ -1,0 +1,14 @@
+{
+    "rights": {
+        "daemon": true,
+        "display": true,
+        "docker": false,
+        "home": true,
+        "pwd": false,
+        "root": false,
+        "sound": true,
+        "ssh": false
+    },
+    "cmd": "signal-desktop -no-sandbox",
+    "name": "Signal-Subuser"
+}
