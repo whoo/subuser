@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:11.2
 RUN apt -y update
 RUN apt install -y curl gpg
 RUN curl -s https://updates.signal.org/desktop/apt/keys.asc | apt-key add -
