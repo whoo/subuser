@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:11.5
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt -y update && apt upgrade -y 
 RUN apt install -y libgtk-3.0 libdbus-glib-1-2 libxt6 wget gnupg xz-utils libx11-xcb1
